@@ -3,11 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <style>
+        body{
+            background-image: url(https://th.bing.com/th/id/OIP.tTfDyqQBPIk2s5yug0g4mAHaHa?rs=1&pid=ImgDetMain);
+        }
         nav a {
             color: #d64161;
             font-size: 20px;
             margin-left: 50px;
             text-decoration: none;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        nav a:hover{
+            color: black;
+            background-color: rgb(253, 141, 248);
+            padding: 5px;
+        }
+        div.content {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding:  20px;
+        }            
+
+        nav {
+            background-color: rgb(255, 255, 255);
+            border-bottom: 10px;
+            padding: 20px;
+        }
+        div.footnote{
+            background-color: whitesmoke;
         }
     </style>
 </head>
@@ -17,10 +39,15 @@
         <a href="{{ url_for('comments') }}">Comments</a>
         <a href="{{ url_for('about') }}">About</a>
     </nav>
-
-    <hr>
+<hr>
     <div class="content">
         {% block content %} {% endblock %}
-    </div>
+        <hr>
+        <div class="footnote">
+            This site wasn't made by profesionnal (unfortunately)
+        </div>
+    </div>       
+
+
 </body>
 </html>
