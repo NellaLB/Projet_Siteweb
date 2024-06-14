@@ -5,6 +5,8 @@
     <style>
         body{
             background-image: url(https://th.bing.com/th/id/OIP.tTfDyqQBPIk2s5yug0g4mAHaHa?rs=1&pid=ImgDetMain);
+            padding: 0px;
+            margin: 0px;
         }
         nav a {
             color: #d64161;
@@ -15,7 +17,7 @@
         }
         nav a:hover{
             color: black;
-            background-color: rgb(253, 141, 248);
+            background-color: whitesmoke;
             padding: 5px;
         }
         div.content {
@@ -35,9 +37,9 @@
 </head>
 <body>
     <nav>
-        <a href="{{ url_for('hello') }}">Main Page</a>
-        <a href="{{ url_for('comments') }}">Comments</a>
-        <a href="{{ url_for('about') }}">About</a>
+        <a href="{{ url_for('hello') }}"><b>Main Page</b></a>
+        <a href="{{ url_for('comments') }}"><b>Comments</b></a>
+        <a href="{{ url_for('about') }}"><b>About</b></a>
     </nav>
 <hr>
     <div class="content">
