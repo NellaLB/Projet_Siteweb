@@ -13,7 +13,7 @@ def hello():
 def about():
     return render_template('about.html')
 
-@app.route('/capitalize/<word>/')
+@app.route('/capitadd/<word>/')
 def capitalize(word):
     return '<h1>{}</h1>'.format(escape(word.capitalize()))
 
@@ -27,9 +27,7 @@ def addition(nb1,nb2):
 @app.route('/comments/')
 def comments():
     comments = [
-        '1',
-        '2',
-        '3',
-        '4'
+        'You can add two numbers with : /addition/n1/n2',
+        'You can have a name with : /capitalize/'
     ]
     return render_template('comments.html',comments=comments)

@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{% block title %} {% endblock %} - Exploration</title>
     <style>
         nav a {
             color: #d64161;
@@ -14,9 +13,11 @@
 </head>
 <body>
     <nav>
-        <a href=" {{url_for('hello')}} ">Main</a>
-        <a href=" {{url_for('about')}} ">About</a>
+        <a href="{{ url_for('hello') }}">Main Page</a>
+        <a href="{{ url_for('comments') }}">Comments</a>
+        <a href="{{ url_for('about') }}">About</a>
     </nav>
+
     <hr>
     <div class="content">
         {% block content %} {% endblock %}
