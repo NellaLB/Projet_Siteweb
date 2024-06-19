@@ -64,3 +64,6 @@ def comments():
         'You can have a name with : /capitalize/'
     ]
     return render_template('comments.html',comments=comments)
+
+if __name__ == '__main__':
+    app.run()
